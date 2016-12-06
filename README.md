@@ -1,7 +1,14 @@
 # rundeck-authorization
 
-Input file format
-csv ':' seperated
+### Usage :
+./rundeck-acl-generator.pl -i inputfile.csv
+
+#### outputs
+* A aclpolicy file is created and populated with rundeck policy and its name is the unique combination of username,context and project. 
+* Entire rundeck acl policy is printed on the screen for the inputfile
+
+###Input file format
+csv file with  ':' seperated fields
 ```
 # <FIELD1>:<FIELD2>:<FIELD3>:<FIELD4>:<FIELD5>
 ```
